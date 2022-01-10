@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Verificador de nacionalidade</h1>
-    País de origem: <input type="text" name="txtnac" id="txtnac">
+    País de origem: <input type="text" name="txtnac" id="txtnac" >
     <input type="button" value="Verificar" onclick="nacionalidade()">
     <div id="res">
 
@@ -19,7 +19,7 @@
             var txtn = document.getElementById('txtnac')
             var res = document.getElementById('res')
             var nac = (txtn.value)
-            if (nac == 'Brasil') { 
+            if (nac == 'Brasil', 'brasil') { 
                 res.innerHTML = `<p>Você é brasileiro!</p>`
         }   else {  
                 res.innerHTML = `<p>Você é estrangeiro!</p>`
